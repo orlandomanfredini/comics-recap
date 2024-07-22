@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-<section>
+<section style="height:100vh">
     <div class="container">
         <h1>{{$comic->title}}</h1>
         <strong>{{$comic->description}}</strong>
