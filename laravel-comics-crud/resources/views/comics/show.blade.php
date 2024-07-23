@@ -8,5 +8,11 @@
         <strong>{{$comic->price}}</strong>
         <p>{{$comic->company}}</p>
     </div>
+    <div class="d-flex justify-content-center gap-5">
+        <button class="btn btn-primary">
+            <a class="text-white" href="{{route('comics.edit', $comic)}}">Modifica</a>
+        </button>
+        
+    </div>
 </section>
 @endsection

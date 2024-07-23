@@ -2,7 +2,7 @@
 @section('content')
 <section>
    <div class="container">
-   <form action="" method="POST">
+   <form class="my-4" action="{{route('comics.store')}}" method="POST">
         @csrf
         <div class="mb-3">
             <label for="title" class="form-label">Comic Title</label>
@@ -22,7 +22,7 @@
         </div>
         <div class="mb-3">
             <label for="company" class="form-label">Comic company</label>
-            <input type="number" name="company" class="form-control" id="company">
+            <input type="text" name="company" class="form-control" id="company">
         </div>
 
         <button class="btn btn-primary">CREA</button>

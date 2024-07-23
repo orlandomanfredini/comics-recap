@@ -29,7 +29,16 @@
                         <td>{{$comic->company}}</td>
                         <td>{{$comic->genre}}</td>
                         <td>{{$comic->price}}</td>
-                        <td></td>
+                        <td>
+                            <div class="d-flex gap-2">
+                                <a href="{{route('comics.edit', $comic)}}" class="btn btn-primary">Modifica</a>
+                                <form action="{{route('comics.destroy', $comic)}}" method="POST">
+                                   @method('DELETE')
+                                   @csrf
+                                   <button class="btn btn-danger">Elimina</button>
+                                </form>
+                            </div>
+                        </td>
                     </tr>
                 @endforeach
 
